@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="tech.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecno+ Form</title>
+</head>
+
+<body>
+
+
+
+
+    <!--QUADRO DE FUNDO PARA O FURMULARIO-->
+    <div class="background_text"></div>
+
+
+    <!--IMAGEM DO MEIO DO FORMULARIO-->
+    <div>
+        <img id="imagem_formulario" src="portfolio.svg" alt="">
+    </div>
+
+
+
+    <header>
+
+        <!--ALERTA DE CONFIRMAÇÃO DOS DADOS NO FORMULARIO-->
+        <form action="Ação de Pagina" method="post" name="dados" onsubmit="return confirmaDados();">
+
+            <!--BOTÕES DE ENVIO E CANCELAMENTO DE FORMULARIO-->
+
+            <div>
+                <p id="envia_dados">Enviar</p>
+                <button id="botao_enviaDados">></button>
+            </div>
+            <div>
+                <p id="cancela_dados">Cancelar</p>
+                <button type="reset" id="botao_cancelaDados">
+                    < </button>
+            </div>
+
+
+            <!--TITULO OU NOME DA EMPRESSA-->
+            <div>
+                <h1 id="tecno_title">
+                    Tecno+ Form
+                </h1>
+            </div>
+
+
+            <!--NOME DO FUNCIONARIO-->
+            <div>
+                <label for="nome_Funcionario" id="nome_Funcionario0">Nome do Funcionario</label>
+                <input type="text" id="nome_Funcionario" maxlength="45">
+            </div>
+
+            <!--CPF-->
+            <div>
+                <label for="cpf" id="cpf0">CPF</label>
+                <input type="text" id="cpf" maxlength="14" placeholder="xxx.xxx.xxx-xx"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="mascara_cpf()">
+            </div>
+
+            <!--RG-->
+            <div>
+                <label for="rg" id="rg0">RG</label>
+                <input type="text" id="rg" placeholder="x-xxx.xxx" maxlength="9"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" onkeyup="mascara_rg()">
+            </div>
+
+            <!--DATA DE NASCIMENTO-->
+            <div>
+                <label for="data_Nascimento" id="data_nascimento0">Data de Nascimento</label>
+                <input type="text" id="data_nascimento" maxlength="10" placeholder="xx/xx/xxxx"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                    onkeyup="mascara_data_nascimento()">
+            </div>
+
+            <!--TIPO DE CNH-->
+            <div>
+                <label for="cnh" id="cnh0">Tipo de CNH</label>
+                <select id="cnh">
+                    <option value="">Selecione...</option>
+                    <option value="Categiria">A</option>
+                    <option value="Categoria">B</option>
+                    <option value="Categoria">A/B</option>
+                </select>
+            </div>
+
+            <!--ESTADO CIVIL-->
+            <div>
+                <label for="estado_Civil" id="estado_Civil0">Estado Civil</label>
+                <select id="estado_Civil">
+                    <option value="">Selecione...</option>
+                    <option value="Solteiro">Solteiro (a)</option>
+                    <option value="Casado">Casado (a)</option>
+                    <option value="Viúvo">Viúvo (a)</option>
+                    <option value="Divorsiado">Divorciado (a)</option>
+                </select>
+            </div>
+
+            <!--CEP-->
+            <div>
+                <label for="cep" id="cep0">CEP</label>
+                <input type="text" id="cep" placeholder="xxxxx-xxx" maxlength="9" onkeyup="mascara_cep()"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            </div>
+
+            <!--RUA-->
+            <div>
+                <label for="rua" id="rua0">Rua</label>
+                <input type="text" id="rua">
+            </div>
+
+            <!--BAIRRO-->
+            <div>
+                <label for="Bairro" id="Bairro0">Bairro</label>
+                <input type="text" id="Bairro">
+            </div>
+
+            <!--CIDADE-->
+            <div>
+                <label for="Cidade" id="Cidade0">Cidade</label>
+                <select id="Cidade">
+                    <option value="">primeiro selecione o estado</option>
+                </select>
+            </div>
+
+            <!--ESTADO-->
+            <div>
+                <label for="Estado" id="Estado0">Estado</label>
+                <select id="Estado">
+                    <option value="">selecionar estado</option>
+                </select>
+            </div>
+
+            <!--NUMERO TELEFONE-->
+            <div>
+                <label for="Numero" id="Numero0">Núm.Telefone</label>
+                <input type="text" id="Numero" maxlength="15" placeholder="(xx) x.xxxx-xxxx"
+                    onkeyup="mascara_telefone()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            </div>
+            <!--NUMERO RESIDENCIAL-->
+            <div>
+                <label for="NumCasa" id="NumCasa0">Núm.Residencia</label>
+                <input type="text" id="NumCasa" maxlength="4" onkeyup="mascara_telefone()"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            </div>
+
+            <!--COMPLEMENTO-->
+            <div>
+                <label for="Complemento" id="Complemento0">Complemento</label>
+                <input type="text" id="Complemento">
+            </div>
+
+
+
+
+        </form>
+    </header>
+
+
+
+
+
+
+    <!--VINCULAÇÃO AO JAVACSRIPT-->
+    <script src="Script.js"></script>
+
+
+</html>
+
+
+</body>
+
+</html>

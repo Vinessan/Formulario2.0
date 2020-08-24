@@ -1,0 +1,437 @@
+/*TELA GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*COR DE FUNDO*/
+body{
+    background: rgba(0, 82, 102, 0.767);
+}
+
+
+/*IMAGEM DE FUNDO DO FORMULARIO*/
+#imagem_formulario{
+    position: absolute;
+    width: 15em;
+    opacity: 0.2;
+    top: 27em;
+    left: 53em;
+}
+
+
+/*DESIGNE DO TITULO*/
+#tecno_title{
+
+    position: absolute;
+    top: 15vh;
+    left: 16em;
+    font-family: fantasy;
+    font-size: 50px;
+    color: white;
+}
+
+
+/*QUADRO ONDE VÃO FICAR OS TEXT PARA O FORMULARIO*/
+.background_text{
+
+    position: absolute;
+    width: 75em;
+    height: 30em;
+    top: 20em;
+    left: 23em;
+    background-color: rgba(0, 82, 102, 0.877);
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      15px 15px 15px 15px;
+}
+
+
+/*NOME DO FUNCIONARIO*/
+#nome_Funcionario0{
+
+   position: relative;
+   top: 18em;
+   left: 20em;
+   font-size: 20px;
+   color: white;
+}
+#nome_Funcionario{
+
+   position: relative;
+   top: 29em;
+   left: 16em;
+   width: 25em;
+   height: 2em;
+   text-align: center;
+   outline: none;
+   -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+   -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+   box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+   border-radius:      10px 10px 10px 10px;
+
+}
+
+
+/*CPF DO FUNCIONARIO*/
+#cpf0{
+   position: relative;
+   top: 20em;
+   left: 20em;
+   font-size: 20px;
+   color: white;
+}
+#cpf{
+   position: relative;
+   top: 32em;
+   left: 26.5em;
+   width: 10em;
+   height: 2em;
+   text-align: center;
+   outline: none;
+   -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+   -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+   box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+   border-radius:      10px 10px 10px 10px;
+
+}
+
+
+/*RG DO FUNCIONARIO*/
+#rg0{
+   position: relative;
+   top: 18.5em;
+   left: 31em;
+   font-size: 20px;
+   color: white;
+}
+#rg{
+   position: relative;
+   top: 29.7em;
+   left: 43em;
+   width: 10em;
+   height: 2em;
+   text-align: center;
+   outline: none;
+   -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+   -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+   box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+   border-radius:      10px 10px 10px 10px;
+}
+
+
+/*DATA DE NASCIMENTO*/
+#data_nascimento0{
+   position: relative;
+   top: 20.5em;
+   left: 20em;
+   font-size: 20px;
+   color: white;
+}
+#data_nascimento{
+   position: relative;
+   top: 33em;
+   left: 17em;
+   width: 10em;
+   height: 2em;
+   text-align: center;
+   outline: none;
+   -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+   -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+/*TIPO DE CNH*/
+#cnh0{
+   position: relative;
+   top: 19em;
+   left: 31em;
+   font-size: 20px;
+   color: white;
+}
+#cnh{
+   position: relative;
+   top: 30.9em;
+   left: 37em;
+   width: 10em;
+   height: 2em;
+   text-align: center;
+   outline: none;
+   -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+   -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+/*ESTADO CIVIL*/
+#estado_Civil0{
+   position: relative;
+   top: 21.5em;
+   left: 20em;
+   font-size: 20px;
+   color: white;
+}
+#estado_Civil{
+   position: relative;
+   top: 35em;
+   left: 22em;
+   width: 15em;
+   height: 2.5em;
+   text-align: center;
+   outline: none;
+   -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+   -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+/*CEP*/
+#cep0{
+    position: relative;
+    top: 8.8em;
+    left: 70em;
+    font-size: 20px;
+    color: white;
+}
+#cep{
+    position: relative;
+    top: 15.3em;
+    left: 101em;
+    width: 10em;
+    height: 2em;
+    text-align: center;
+    outline: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+     box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+/*RUA*/
+#rua0{
+    position: relative;
+    top: 7.2em;
+    left: 53em;
+    font-size: 20px;
+    color: white;
+}
+#rua{
+    position: relative;
+    top: 13em;
+    left: 75.5em;
+    width: 20em;
+    height: 2em;
+    text-align: center;
+    outline: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+/*BAIRRO*/
+#Bairro0{
+    position: relative;
+    top: 10em;
+    left: 53em;
+    font-size: 20px;
+    color: white;
+}
+#Bairro{
+    position: relative;
+    top: 17.5em;
+    left: 74.2em;
+    width: 20em;
+    height: 2em;
+    text-align: center;
+    outline: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+
+/*CIDADE*/
+#Cidade0{
+    position: relative;
+    top: 7.8em;
+    left: 68em;
+    font-size: 20px;
+    color: white;
+}
+#Cidade{
+    position: relative;
+    top: 13.8em;
+    left: 96em;
+    width: 15em;
+    height: 2em;
+    text-align: center;
+    outline: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+
+/*ESTADO*/
+#Estado0{
+    position: relative;
+    top: 10em;
+    left: 68em;
+    font-size: 20px;
+    color: white;
+}
+#Estado{
+    position: relative;
+    top: 17.5em;
+    left: 96.3em;
+    width: 15.5em;
+    height: 2.3em;
+    text-align: center;
+    outline: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+
+/*NÚMERO DE TELEFONE*/
+#Numero0{
+    position: relative;
+    top: 13.5em;
+    left: 68em;
+    font-size: 20px;
+    color: white;
+}
+#Numero{
+    position: relative;
+    top: 22.5em;
+    left: 92em;
+    width: 15em;
+    height: 2em;
+    text-align: center;
+    outline: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+
+/*NUMERO RESIDENCIAL*/
+#NumCasa0{
+position: relative;
+top: 12em;
+left: 56em;
+font-size: 20px;
+color: white;
+}
+#NumCasa{
+    position: relative;
+    top: 20.3em;
+    left: 76em;
+    width: 5em;
+    height: 2em;
+    text-align: center;
+    outline: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+
+/*COMPLEMENTO*/
+#Complemento0{
+    position: relative;
+    top: 7em;
+    left: 53em;
+    font-size: 20px;
+    color: white;
+}
+#Complemento{
+    position: relative;
+    top: 13em;
+    left: 69.5em;
+    width: 20em;
+    height: 2em;
+    text-align: center;
+    outline: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+
+
+
+
+/*BOTÕES PARA EM VIO DE DADOS OU CANCELAMENTO DO FORMULARIO*/
+#envia_dados{
+    position: absolute;
+    top: 45.7rem;
+    left: 63.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+#botao_enviaDados{
+    position: absolute;
+    top: 45.5rem;
+    left: 60rem;
+    width: 3rem;
+    height: 2rem;
+    outline: none;
+    color: white;
+    background: rgba(0, 200, 250, 0.295);
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+#botao_enviaDados:hover{
+    background: rgba(0, 200, 250, 0.753);
+    transition: all 0.5s ease;
+}
+
+
+#cancela_dados{
+    position: absolute;
+    top: 45.7rem;
+    left: 49rem;
+    font-size: 1.5rem;
+    color: white;
+}
+#botao_cancelaDados{
+    position: absolute;
+    top: 45.5rem;
+    left: 55rem;
+    width: 3rem;
+    height: 2rem;
+    outline: none;
+    color: white;
+    background: rgba(0, 200, 250, 0.295);
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(0, 0, 0, 0.77);
+    box-shadow:         9px 7px 5px rgba(0, 0, 0, 0.77);
+    border-radius:      10px 10px 10px 10px;
+}
+#botao_cancelaDados:hover{
+    background: rgba(0, 200, 250, 0.753);
+    transition: all 0.5s ease;
+}
+
