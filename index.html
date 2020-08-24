@@ -107,56 +107,57 @@
             <!--CEP-->
             <div>
                 <label for="cep" id="cep0">CEP</label>
-                <input type="text" id="cep" placeholder="xxxxx-xxx" maxlength="9" onkeyup="mascara_cep()"
-                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input type="text" oninput="getDadosPorCep(this.value)" id="cep" placeholder="xxxxx-xxx" maxlength="9"
+                    onkeyup="mascara_cep()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
             </div>
+            <div>
 
-            <!--RUA-->
-            <div>
-                <label for="rua" id="rua0">Rua</label>
-                <input type="text" id="rua">
-            </div>
 
-            <!--BAIRRO-->
-            <div>
-                <label for="Bairro" id="Bairro0">Bairro</label>
-                <input type="text" id="Bairro">
-            </div>
 
-            <!--CIDADE-->
-            <div>
-                <label for="Cidade" id="Cidade0">Cidade</label>
-                <select id="Cidade">
-                    <option value="">primeiro selecione o estado</option>
-                </select>
-            </div>
 
-            <!--ESTADO-->
-            <div>
-                <label for="Estado" id="Estado0">Estado</label>
-                <select id="Estado">
-                    <option value="">selecionar estado</option>
-                </select>
-            </div>
+                <!--RUA-->
+                <div>
+                    <label for="rua" id="rua0">Rua</label>
+                    <input type="text" readonly id="rua">
+                </div>
 
-            <!--NUMERO TELEFONE-->
-            <div>
-                <label for="Numero" id="Numero0">Núm.Telefone</label>
-                <input type="text" id="Numero" maxlength="15" placeholder="(xx) x.xxxx-xxxx"
-                    onkeyup="mascara_telefone()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-            </div>
-            <!--NUMERO RESIDENCIAL-->
-            <div>
-                <label for="NumCasa" id="NumCasa0">Núm.Residencia</label>
-                <input type="text" id="NumCasa" maxlength="4" onkeyup="mascara_telefone()"
-                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-            </div>
 
-            <!--COMPLEMENTO-->
-            <div>
-                <label for="Complemento" id="Complemento0">Complemento</label>
-                <input type="text" id="Complemento">
-            </div>
+                <!--BAIRRO-->
+                <div>
+                    <label for="Bairro" id="Bairro0">Bairro</label>
+                    <input type="text" readonly id="Bairro">
+                </div>
+
+                <!--CIDADE-->
+                <div>
+                    <label for="Cidade" id="Cidade0">Cidade</label>
+                    <input type="text" id="Cidade" readonly id="Cidade">
+                </div>
+
+                <!--ESTADO-->
+                <div>
+                    <label for="Estado" id="Estado0">Estado</label>
+                    <input type="text" id="Estado" readonly id="Estado">
+                </div>
+
+                <!--NUMERO TELEFONE-->
+                <div>
+                    <label for="Numero" id="Numero0">Núm.Telefone</label>
+                    <input type="text" id="Numero" maxlength="15" placeholder="(xx) x.xxxx-xxxx"
+                        onkeyup="mascara_telefone()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                </div>
+                <!--NUMERO RESIDENCIAL-->
+                <div>
+                    <label for="NumCasa" id="NumCasa0">Núm.Residencia</label>
+                    <input type="text" id="NumCasa" maxlength="4" onkeyup="mascara_telefone()"
+                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                </div>
+
+                <!--COMPLEMENTO-->
+                <div>
+                    <label for="Complemento" id="Complemento0">Complemento</label>
+                    <input type="text" id="Complemento">
+                </div>
 
 
 
