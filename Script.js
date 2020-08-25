@@ -94,7 +94,34 @@ function confirmaDados() {
         return false;
     }
 
+    //BOTAO TESTE
+    if (document.dados.botao_enviaDados.value == "") {
+        alert("Cadastro Realizado com Sucesso!");
+
+        console.log(fields);
+
+        const jsonFields = JSON.stringify(fields)
+
+        console.log(jsonFields)
+
+        const req = new XMLHttpRequest();
+        req.open("POST", "https://beginner-api.herokuapp.com/save", true)
+        req.setRequestHeader("Content-Type", "application/json")
+        req.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                req.send();
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -165,28 +192,6 @@ function mascara_telefone() {
 
 
 
-$(document).ready(function () {
-    carregar_json('Estado');
-    function carregar_json(id) {
-        var html = '';
-
-        $.getJSON('https://gist.githubusercontent.com/letanure/3012978/raw/36fc21d9e2fc45c078e0e0e07cce3c81965db8f9/estados-cidades.json', function (data) {
-            html += '<option>Selecionar ' + id + '</option>';
-            console.log(data);
-            if (id == 'Estado') {
-                for (var i = 0; i < data.estados.length; i++) {
-                    html += '<option value=' + data.estados[i].sigla + '>' + data.estados[i].nome + '</option>';
-                }
-            }
-
-            $('#' + id).html(html);
-        });
-
-    }
-
-
-
-});
 
 
 
@@ -213,3 +218,7 @@ function getDadosPorCep(cep) {
     }
     xhr.send()
 }
+
+
+
+

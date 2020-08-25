@@ -30,13 +30,13 @@
     <header>
 
         <!--ALERTA DE CONFIRMAÇÃO DOS DADOS NO FORMULARIO-->
-        <form action="Ação de Pagina" method="post" name="dados" onsubmit="return confirmaDados();">
+        <form action="Ação de Pagina" method="post" name="dados">
 
             <!--BOTÕES DE ENVIO E CANCELAMENTO DE FORMULARIO-->
 
             <div>
                 <p id="envia_dados">Enviar</p>
-                <button id="botao_enviaDados">></button>
+                <button id="botao_enviaDados" onclick="return confirmaDados();">></button>
             </div>
             <div>
                 <p id="cancela_dados">Cancelar</p>
